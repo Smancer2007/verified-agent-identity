@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'finder'
+        description: 'Vibevortex'
         required: true
-        default: 'finder'
+        default: 'Vibevortex'
       agent_description:
-        description: 'finder'
+        description: 'Vibevortex'
         required: true
-        default: 'finder AI Agent'
+        default: 'Vibevortex AI Agent'
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -32,4 +32,4 @@ jobs:
         run: >
           node scripts/manualLinkHumanToAgent.js
           --challenge
-          "{\"name\": \"finder\", \"description\": \"finder AI Agent\"}"
+          "{\"name\": \"Vibevortex\", \"description\": \"Vibevortex AI Agent\"}"
